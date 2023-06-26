@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEWS NATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <div class="nav-name">
+                <h2>THE NEWS NATION</h2>
+                <p>News travels fast in places where nothing much ever happens</p>
+            </div>
+
+
+            <div class ="nav-struct">
+                
+                <div class="nav-links">
+                    <ul class="nav-display">
+                        <li  id="Health" onclick="onNavItemClick('Health')">Health</li>
+                        <li  id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                        <li  id="Environment" onclick="onNavItemClick('Environment')">Environment</li>
+                        <li  id="Business" onclick="onNavItemClick('Business')">Business</li>
+                    </ul>
+                </div>
+
+                <div class="search-bar flex">
+                    <input id="search-text" type="text" class="news-input" placeholder="e.g. News">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+
+            </div>  
+            
+            
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptate tempora nam omnis, ducimus veniam accusantium alias repellat numquam voluptatem modi consectetur animi dicta eius magni distinctio! Provident, modi omnis.
+                Laborum tenetur porro itaque velit, suscipit repellendus eaque consequuntur. Reiciendis voluptate, molestiae ex sapiente tempora quos debitis consequatur eaque, soluta nisi ab doloremque dignissimos, nesciunt quis. Quasi molestias distinctio illo?
+                Aperiam esse deleniti neque vitae facilis! Fugiat rerum ipsa consectetur totam perspiciatis! Dolorum architecto repudiandae, cumque sed dolor ullam iste obcaecati, maxime repellat nostrum, sunt ut quo esse natus magni.
+                Vero recusandae cumque facere officiis quo doloremque cum vitae ullam ab necessitatibus eum maxime, error quae amet aliquam, veniam quis, voluptate excepturi delectus suscipit architecto. Consequuntur ut libero expedita veniam!
+                Pariatur accusamus non, quia aliquid dolore ullam maiores, minima voluptatem vel optio possimus, ut nobis sed fugit tenetur quas dignissimos iure dicta id enim deleniti itaque voluptatibus. Ipsam, necessitatibus et.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
